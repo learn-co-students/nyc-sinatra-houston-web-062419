@@ -2,5 +2,10 @@
 
 <!-- add content here -->
 
-<a class="button" href="/landmarks">Landmarks</a>
-<a class="button" href="/">Home</a>
+<form action='/landmarks' method='post'>
+<label>Landmark Name:</label>
+<input type='text' name='landmark[name]'/>
+<label>Landmark Year Completed:</label>
+<input type='text' name='landmark[year_completed]'/>
+<input type='submit' value='Create New Landmark'/>
+</form>

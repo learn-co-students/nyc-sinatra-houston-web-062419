@@ -1,0 +1,11 @@
+    
+<p>Figure name:
+<%= @figure.name %>
+<form action='/figures/<%= @figure.id %>' method='post'>
+<input type='hidden' name='_method' value='delete'/> </p>
+    <input type='submit' value='DELETE the FIGURE'/>
+</form>
+
+<a href='/figures/<%= @figure.id %>/edit'>
+<button>EDIT the FIGURE</button> 
+</a>
